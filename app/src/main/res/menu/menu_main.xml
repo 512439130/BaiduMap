@@ -1,0 +1,60 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yy.android.helloworld.MainActivity">
+    <item
+        android:id="@+id/id_map_common"
+        android:orderInCategory="100"
+        android:title="普通地图"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_site"
+        android:orderInCategory="100"
+        android:title="卫星地图"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_traffic"
+        android:orderInCategory="100"
+        android:title="实时交通(off)"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_location"
+        android:orderInCategory="100"
+        android:title="我的位置"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_mode_common"
+        android:orderInCategory="100"
+        android:title="地图模式（普通模式）"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_mode_following"
+        android:orderInCategory="100"
+        android:title="地图模式（跟随模式）"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_map_mode_compass"
+        android:orderInCategory="100"
+        android:title="地图模式（罗盘模式）"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/id_add_overlay"
+        android:orderInCategory="100"
+        android:title="添加覆盖物"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/id_btn_mocknav"
+        android:orderInCategory="100"
+        android:title="模拟导航"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/id_btn_realnav"
+        android:orderInCategory="100"
+        android:title="开始导航"
+        app:showAsAction="never">
+
+    </item>
+</menu>
