@@ -501,8 +501,10 @@ public class MainActivity extends Activity {
     private void mDestLocationDataState(Boolean state) {
         if (mDestLocationData == null) {
             Toast.makeText(MainActivity.this, "长按地图设置目标地点", Toast.LENGTH_SHORT).show();
+        }else{
+            routeplanToNavi(state);
         }
-        routeplanToNavi(state);
+
     }
 
     /**
