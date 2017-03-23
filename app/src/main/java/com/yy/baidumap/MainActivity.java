@@ -384,6 +384,7 @@ public class MainActivity extends Activity {
             （6）上次算路取消了，需要等一会才能进行下一次算路
             * */
             Toast.makeText(MainActivity.this, "算路失败", Toast.LENGTH_SHORT).show();
+            System.out.println("算路失败");
         }
     }
 
@@ -626,7 +627,10 @@ public class MainActivity extends Activity {
                 centerToMyLocation(location.getLatitude(), location.getLongitude());
                 isFirstIn = false;
                 Toast.makeText(context, location.getAddrStr(), Toast.LENGTH_SHORT).show();
-                System.out.println("错误码：" + location.getLocType());
+                if(location.getLocType() == 161){
+                    System.out.println("网络定位成功!请求返回值=" + location.getLocType());
+                }
+
             }
         }
     }
